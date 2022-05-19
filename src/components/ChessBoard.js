@@ -1,4 +1,5 @@
 import React from 'react';
+import uuid from 'react-uuid';
 import '../styles/ChessBoard.css';
 
 const ChessBoard = () => {
@@ -11,13 +12,13 @@ const ChessBoard = () => {
       const squareNum = i + j;
       if (squareNum % 2 === 0) {
         board.push(
-          <div className='square black'>
+          <div className='square black' key={uuid()}>
             {col[j]}{rows[i]}
           </div>
         )
       } else {
         board.push(
-          <div className='square white'>
+          <div className='square white' key={uuid()}>
             {rows[i]}{col[j]}
           </div>
         )
