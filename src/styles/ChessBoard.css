@@ -12,3 +12,11 @@
   /* width: 800px; */
   border: 1px white solid;
 }
+
+.black {
+  background-color: #000000;
+}
+
+.white {
+  background-color: #ffffff;
+}

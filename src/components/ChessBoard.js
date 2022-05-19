@@ -8,17 +8,25 @@ const ChessBoard = () => {
 
   for (let j = col.length - 1; j >= 0; j--) {
     for (let i = 0; i < rows.length; i++) {
-      board.push(
-        <div className='square'>
-          [{rows[i]}{col[j]}]
-        </div>
-      )
+      const squareNum = i + j;
+      if (squareNum % 2 === 0) {
+        board.push(
+          <div className='square black'>
+            {col[j]}{rows[i]}
+          </div>
+        )
+      } else {
+        board.push(
+          <div className='square white'>
+            {rows[i]}{col[j]}
+          </div>
+        )
+      }
     }
   }
   return (
     <>
       <div className='board'>
-        {console.log('Board:', board)}
         {board}
       </div>
     </>
