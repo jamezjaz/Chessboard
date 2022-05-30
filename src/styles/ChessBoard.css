@@ -1,0 +1,22 @@
+.board {
+  background-color: #000000;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(8, 65px);
+  grid-template-rows: repeat(8, 65px);
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.square {
+  /* width: 800px; */
+  border: 1px white solid;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.white {
+  background-color: #ffffff;
+}
